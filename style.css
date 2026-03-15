@@ -19,7 +19,7 @@ body::before{
   content:"";
   position:fixed; inset:0;
   background:url("assets/logo.blue.png") no-repeat left center / 60%;
-  opacity:.1; z-index:-1; pointer-events:none;
+  opacity:.05; z-index:-1; pointer-events:none;
 }
 .wrap{ max-width:var(--max); margin:0 auto; padding:0 var(--space); }
 section{ padding:56px 0; }
