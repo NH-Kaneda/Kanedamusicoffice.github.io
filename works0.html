@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>作品リスト | 兼田敏の瓶</title>
+<meta name="description" content="作曲家・兼田敏の作品リスト。吹奏楽作品、ピアノ曲など編成別に掲載しています。">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ==== ヘッダー ==== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="兼田敏の瓶" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="works.html" aria-current="page">Works</a>
+      <a href="media.html">Performance</a>
+      <a href="photography.html">Archive</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ==== メイン ==== -->
+<main class="wrap">
+
+  <section class="works-gate">
+    <h1>作品リスト</h1>
+    <small class="sub">Works / Catalogue</small>
+
+    <p class="lead">
+      兼田敏の作品を編成別に掲載しています。<br>
+      各ジャンルを選択すると、詳細な作品一覧をご覧いただけます。
+    </p>
+
+    <!-- ジャンルカード -->
+    <div class="grid two">
+
+      <a class="card" href="works_wind.html">
+        <img src="assets/wind.jpg" alt="吹奏楽">
+        <h3>吹奏楽 <span class="sub">Wind Band</span></h3>
+        <p>代表作・行進曲・交響作品など</p>
+      </a>
+
+      <a class="card" href="works_piano.html">
+        <img src="assets/piano.jpg" alt="ピアノ">
+        <h3>ピアノ曲 <span class="sub">Piano</span></h3>
+        <p>独奏曲・連弾作品など</p>
+      </a>
+
+      <!-- 将来追加用（今はコメントアウト） -->
+      <!--
+      <a class="card" href="works_orchestra.html">
+        <img src="assets/orchestra.jpg" alt="管弦楽">
+        <h3>管弦楽 <span class="sub">Orchestra</span></h3>
+      </a>
+
+      <a class="card" href="works_choral.html">
+        <img src="assets/choral.jpg" alt="合唱">
+        <h3>合唱曲 <span class="sub">Choral</span></h3>
+      </a>
+
+      <a class="card" href="works_school.html">
+        <img src="assets/school.jpg" alt="校歌">
+        <h3>校歌・市民歌 <span class="sub">School / Civic</span></h3>
+      </a>
+      -->
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ==== フッター ==== -->
+<footer class="site-footer wrap">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <strong>兼田敏の瓶</strong>
+      <div class="footer-sub">Bin Kaneda's Official Website</div>
+    </div>
+
+    <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+  </div>
+
+  <small class="footer-copy">© <span id="y"></span> 兼田音楽事務所</small>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
