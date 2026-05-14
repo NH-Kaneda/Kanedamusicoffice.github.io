@@ -348,3 +348,6 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
 .work-card:hover{
   transform: translateY(-4px);
 }
+.work-thumb img{
+  filter: brightness(.92);
+}
