@@ -4,20 +4,20 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>ピアノ曲作品 - 兼田敏の瓶</title>
-<meta name="description" content="作曲家・兼田敏の作品リスト。吹奏楽作品、ピアノ曲など編成別に掲載しています。">
+<title>ピアノ作品 | 兼田敏の瓶</title>
+<meta name="description" content="兼田敏のピアノ作品一覧。独奏曲、連弾曲などを掲載しています。">
 
 <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- ==== ヘッダー ==== -->
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">
       <img src="assets/logo.png" alt="兼田敏の瓶" class="logo">
     </a>
+
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="profile.html">Profile</a>
@@ -30,76 +30,80 @@
   </div>
 </header>
 
-<!-- ==== メイン ==== -->
-<h1>ピアノ作品</h1>
-<small class="sub">Piano Works</small>
+<main class="wrap">
+  <section class="catalog-page">
+    <h1>ピアノ作品</h1>
+    <small class="sub">Piano Works</small>
 
-<p class="lead">
-  兼田敏によるピアノ作品一覧です。<br>
-  詳細情報は順次追加予定です。
-</p>
+    <p class="lead">
+      兼田敏によるピアノ作品一覧です。<br>
+      詳細情報は順次追加予定です。
+    </p>
 
+    <div class="catalog-layout">
 
-  <div class="catalog-layout">
       <aside class="catalog-filter">
         <h2>分類</h2>
 
         <h3>編成</h3>
-        <a href="works_wind.html" aria-current="page">吹奏楽</a>
+        <a href="works_wind.html">吹奏楽</a>
         <a href="works_chamber.html">室内楽</a>
-        <a href="works_piano.html">ピアノ曲</a>
+        <a href="works_piano.html" aria-current="page">ピアノ曲</a>
         <a href="works_orchestra.html">管弦楽曲</a>
 
         <h3>関連</h3>
         <a href="works_school.html">校歌・市民歌・式典曲</a>
       </aside>
 
-    <div class="catalog-grid">
+      <div class="catalog-grid">
 
+        <a class="work-card" href="#">
+          <div class="work-thumb">
+            <img src="assets/works.png" alt="現代日本の子どものためのピアノ曲">
+            <span>ピアノ</span>
+          </div>
+          <h3>「現代日本の子どものためのピアノ曲」（共著）</h3>
+        </a>
 
-  <a class="work-card" href="#">
-    <div class="work-thumb">
-      <img src="assets/works.png" alt="現代日本の子どものためのピアノ曲">
-      <span>ピアノ</span>
+        <a class="work-card" href="#">
+          <div class="work-thumb">
+            <img src="assets/works.png" alt="現代日本の子どもの連弾曲集">
+            <span>ピアノ</span>
+          </div>
+          <h3>「現代日本の子どもの連弾曲集」（共著）</h3>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb">
+            <img src="assets/works.png" alt="瓶の中の風景">
+            <span>ピアノ</span>
+          </div>
+          <h3>瓶の中の風景</h3>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb">
+            <img src="assets/works.png" alt="組曲I / 組曲II">
+            <span>ピアノ</span>
+          </div>
+          <h3>組曲I / 組曲II</h3>
+        </a>
+
+      </div>
     </div>
-    <h3>「現代日本の子どものためのピアノ曲」（共著）</h3>
-  </a>
+  </section>
+</main>
 
-  <a class="work-card" href="#">
-    <div class="work-thumb">
-      <img src="assets/works.png" alt="現代日本の子どもの連弾曲集">
-      <span>ピアノ</span>
-    </div>
-    <h3>「現代日本の子どもの連弾曲集」（共著）</h3>
-  </a>
-
-  <a class="work-card" href="#">
-    <div class="work-thumb">
-      <img src="assets/works.png" alt="瓶の中の風景">
-      <span>ピアノ</span>
-    </div>
-    <h3>瓶の中の風景</h3>
-  </a>
-
-  <a class="work-card" href="#">
-    <div class="work-thumb">
-      <img src="assets/works.png" alt="組曲I / 組曲II">
-      <span>ピアノ</span>
-    </div>
-    <h3>組曲I / 組曲II</h3>
-  </a>
-
-</div>
-
-  <!-- ==== フッター ==== -->
-<footer class="site-footer wrap">
+<footer class="site-footer wrap" role="contentinfo">
   <div class="footer-grid">
     <div class="footer-brand">
       <strong>兼田敏の瓶</strong>
       <div class="footer-sub">Bin Kaneda's Official Website</div>
     </div>
 
-    <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページ先頭へ戻る">
+      ↑ Top
+    </button>
   </div>
 
   <small class="footer-copy">© <span id="y"></span> 兼田音楽事務所</small>
