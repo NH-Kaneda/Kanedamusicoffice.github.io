@@ -339,3 +339,12 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
     grid-template-columns:1fr;
   }
 }
+.work-card{
+  transition:
+    transform .2s ease,
+    opacity .2s ease;
+}
+
+.work-card:hover{
+  transform: translateY(-4px);
+}
